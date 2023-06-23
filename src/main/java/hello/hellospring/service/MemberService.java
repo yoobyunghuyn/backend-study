@@ -8,14 +8,16 @@ import hello.hellospring.repository.MemberRepository;
 import java.util.List;
 import java.util.Optional;
 
-// @Service
+import org.springframework.transaction.annotation.Transactional;
+
+
+
+@Transactional
 public class MemberService {
 
-//    private final MemberRepository memberRepository = new MemoryMemberRepository();
 
     private final MemberRepository memberRepository;
 
-    // @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
