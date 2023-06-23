@@ -54,7 +54,7 @@ class MemberServiceTest {
         Member member2 = new Member();
         member2.setName("spring");
 
-        // lock 테스트
+        // lock 테스트2
         // when 
         memberService.join(member1);
         IllegalStateException e = assertThrows(IllegalStateException.class, () -> memberService.join(member2));
