@@ -13,7 +13,7 @@ public class MemberService {
 
 //    private final MemberRepository memberRepository = new MemoryMemberRepository();
 
-    private final MemberRepository memberRepository;
+    private MemberRepository memberRepository;
 
     // @Autowired
     public MemberService(MemberRepository memberRepository) {
