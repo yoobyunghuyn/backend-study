@@ -32,8 +32,7 @@ public class MemberController {
         System.out.println("member = "+ member.getName());
 
         memberService.join(member);
-//        return "redirect:/";
-        return "redirect:/home";
+       return "redirect:/";
     }
 
     @GetMapping("/members")
